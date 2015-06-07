@@ -1,4 +1,5 @@
 .doodle-wrapper {
+	margin: 15px auto;
 	border: 1px #444 solid;
 	border-radius: 10px;
 	box-sizing: border-box;
@@ -20,7 +21,7 @@
 }
 
 .doodle-controlpanel{
-	margin: 15px 0;
+	margin: 0 auto 15px auto;
 	padding: 0;
 	overflow: hidden;
 	max-height: 38px;
