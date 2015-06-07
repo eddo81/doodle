@@ -15,7 +15,8 @@ Some of it's features include:
 ###Installation
 Doodle comes in both minimized and uncompressed formats. To install Doodle simply clone this repo or download the zip-file. Then include it in your markup like this:
 
-```The Doodle-CSS should be embeded below your own
+The Doodle-CSS should be embeded below your own
+```html
 <head>
   <meta charset="utf-8">
   <title>Doodle</title>
