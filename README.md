@@ -5,4 +5,4 @@ A canvas drawing app by way of a jQuery-plugin
 ```  
 ```
 
-![Alt text](/url/to/image.jpg)
+![Screenshot of plugin](http://www.student.bth.se/~edjo14/javascript/kmom07/img/screenshot.png)
