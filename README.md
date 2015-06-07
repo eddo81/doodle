@@ -13,9 +13,10 @@ Some of it's features include:
 * A undo-button
 
 ###Installation
-Doodle comes in both minimized and uncompressed formats. To install Doodle simply clone this repo or download the zip-file. Then include it in your markup like this:
+---
+Doodle comes in both minified and uncompressed formats. To install Doodle simply clone this repo or download the zip-file. Then include it in your markup like this:
 
-jquery.doodle.css (*The Doodle-CSS should be embeded below your own*)
+**jquery.doodle.css** (*The Doodle-CSS should be embeded below your own*)
 ```html
 <head>
   <meta charset="utf-8">
@@ -25,15 +26,31 @@ jquery.doodle.css (*The Doodle-CSS should be embeded below your own*)
 </head>
 ```
 
-jquery.doodle.js
+**jquery.doodle.js**
 ```html
 <script src="jquery.js"></script>
 <script src="jquery.doodle.js"></script> 
-<script src="yourJavascript.js"></script>
+<script src="yourJavaScript.js"></script>
 </body>
 </html>
 ```
 
 ###Configuation
-```  
+---
+Embed Doodle via jQuery like so:
+
+```javascript
+$('#target').doodle(); 
 ```
+(*Do make sure that the parent element is empty*)
+
+The Doodle-canvas will conform to the width and height of its parent, although it does have a minimum width and height of 640 x 480px set with inline styling.
+By default Doodle is configured to save images in the .png format. Likewise Doodle comes with a predefined color-palette. If you wish to modify these default settings simply pass a object litteral to the .doodle method like so:
+
+```javascript
+$('#target').doodle({
+	format: 'jpeg',
+	palette: ["white", "black", "red", "yellow", "green", "blue", "purple"]
+}); 
+``` 
+The key "format" takes a lowercase string value, either "png" or "jpeg". The "palette" key takes and array of lowercase color words. The size of the palette is limited to 7, all color words beyond this limit are omitted.
