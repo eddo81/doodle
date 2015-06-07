@@ -35,7 +35,7 @@ Doodle comes in both minified and uncompressed formats. To install Doodle simply
 </html>
 ```
 
-###Configuation
+###Configuration
 ---
 Embed Doodle via jQuery like so:
 
